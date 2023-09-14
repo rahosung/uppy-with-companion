@@ -1,11 +1,9 @@
-upload.example.com {
-    reverse_proxy 0.0.0.0:30000
-}
-
-tus.example.com {
-    reverse_proxy 0.0.0.0:30001
-}
-
-companion.example.com {
-    reverse_proxy 0.0.0.0:30002
+rahosung.zioyou.kr {
+        reverse_proxy 0.0.0.0:30000
+        reverse_proxy /drive/* 0.0.0.0:30001
+        reverse_proxy /connect/* 0.0.0.0:30001
+        reverse_proxy /api/* 0.0.0.0:30001
+        reverse_proxy /dropbox/* 0.0.0.0:30001
+        reverse_proxy /files 0.0.0.0:30002
+        reverse_proxy /files/* 0.0.0.0:30002
 }
