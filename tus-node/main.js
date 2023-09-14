@@ -35,7 +35,7 @@ fastify.all('/files/*', (req, res) => {
     tusServer.handle(req.raw, res.raw);
 });
 
-fastify.listen({ host: "0.0.0.0", port: 30001 }, (err) => {
+fastify.listen({ host: "0.0.0.0", port: 30002 }, (err) => {
     if (err) {
         fastify.log.error(err);
         process.exit(1);

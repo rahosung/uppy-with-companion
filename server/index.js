@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 })
 
 // Routes
-app.get('/', (req, res) => {
+app.get('/companion', (req, res) => {
   res.setHeader('Content-Type', 'text/plain')
   res.send('Welcome to Companion')
 })
@@ -50,7 +50,7 @@ const companionOptions = {
   secret: secret,
   debug: true,
   corsOrigins: process.env.clientUrl,
-  COMPANION_PORT: 30002
+  COMPANION_PORT: 30001
 }
 
 const { app: companionApp } = companion.app(companionOptions);
@@ -67,7 +67,7 @@ app.use((err, req, res) => {
   res.status(err.status || 500).json({ message: err.message, error: err })
 })
 
-companion.socket(app.listen(30002))
+companion.socket(app.listen(30001))
 
 console.log('Welcome to Companion!')
 console.log(`Listening Server`)

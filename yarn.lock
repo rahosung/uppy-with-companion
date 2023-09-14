@@ -1226,6 +1226,16 @@
     "@uppy/utils" "^5.4.3"
     preact "^10.5.13"
 
+"@uppy/google-drive@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@uppy/google-drive/-/google-drive-3.2.1.tgz#af5dbac65d7c169cf199b40b19422145cecdc46f"
+  integrity sha512-bxcCLzndCPNfltNE0goVKF8yVF4+ejWf+wFkG2wVTzWiW3R37FzfstkmQfoD0yPzdzP7MDqIkcIIQ4PmZAHixw==
+  dependencies:
+    "@uppy/companion-client" "^3.3.0"
+    "@uppy/provider-views" "^3.5.0"
+    "@uppy/utils" "^5.4.3"
+    preact "^10.5.13"
+
 "@uppy/provider-views@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@uppy/provider-views/-/provider-views-3.5.0.tgz#0041677d856ba82a11f09f1c9fdf379f1f0ca815"
